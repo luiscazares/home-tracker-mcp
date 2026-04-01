@@ -1,0 +1,15 @@
+Hi there,
+
+Here's your home expense summary for {period}.
+
+──────────────────────────────────────
+  BREAKDOWN BY CATEGORY
+──────────────────────────────────────
+{breakdown_rows}
+──────────────────────────────────────
+  TOTAL                    ${total}
+──────────────────────────────────────
+
+Stay on budget! 💪
+
+– Home Tracker

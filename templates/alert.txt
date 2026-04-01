@@ -1,0 +1,6 @@
+🔔 {title}
+
+{message}
+{amount_line}
+
+– Home Tracker
