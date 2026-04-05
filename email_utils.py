@@ -195,6 +195,7 @@ def _send(
                 server.login(sender_email, password)
                 message_ids = server.sendmail(from_header, validated_recipients, msg.as_string())
         
+        return {"ok": True, "sent_to": validated_recipients}
     except smtplib.SMTPAuthenticationError:
         logger.error("SMTP Authentication failed. Check credentials or 2FA settings.")
         return {"ok": False, "error": "SMTP Authentication failed. Use App Password at https://myaccount.google.com/apppasswords"}
