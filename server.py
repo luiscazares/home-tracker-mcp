@@ -555,5 +555,5 @@ def send_notes_summary(
 
 
 # ── Start server when invoked via MCP stdio transport ──────────────────────────
-
-mcp.run(transport="stdio")
+if __name__ == "__main__":
+    mcp.run(transport="stdio")

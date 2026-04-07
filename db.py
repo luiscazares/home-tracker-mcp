@@ -50,7 +50,7 @@ def insert_expense(amount: float, category: str, description: str,
     conn.commit()
     row_id = c.lastrowid
     conn.close()
-    return row_id
+    return row_id # type: ignore
 
 
 def query_expenses(start_date: str, end_date: str) -> list[dict]:
@@ -97,7 +97,7 @@ def insert_note(content: str, author: str, tag: str | None) -> int:
     conn.commit()
     row_id = c.lastrowid
     conn.close()
-    return row_id
+    return row_id # type: ignore
 
 
 def fetch_notes(limit: int = 20, author: str | None = None,
